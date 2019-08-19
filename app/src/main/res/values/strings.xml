@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IdWallFlag</string>
+    <string name="Home">Home</string>
+    <string name="Husky">Husky</string>
+    <string name="Hound">Hound</string>
+    <string name="Pug">Pug</string>
+    <string name="Labrador">Labrador</string>
+</resources>

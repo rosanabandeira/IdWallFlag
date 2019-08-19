@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/Home" />
+
+    <item
+        android:id="@+id/navigation_husky"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/Husky" />
+
+    <item
+        android:id="@+id/navigation_hound"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/Hound" />
+
+    <item
+        android:id="@+id/navigation_pug"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/Pug" />
+
+    <item
+        android:id="@+id/navigation_labrador"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/Labrador" />
+
+</menu>
