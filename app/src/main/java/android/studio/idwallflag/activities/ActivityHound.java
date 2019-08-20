@@ -11,10 +11,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -110,8 +112,8 @@ public class ActivityHound extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerViewHound);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        LinearLayoutManager linearLayout = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayout);
 
         adapter = new RecyclerAdapter(listImages);
         recyclerView.setAdapter(adapter);

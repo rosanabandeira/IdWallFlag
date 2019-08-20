@@ -12,6 +12,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
@@ -115,8 +116,8 @@ public class ActivityLabrador extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerViewLabrador);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        LinearLayoutManager linearLayout = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayout);
 
         adapter = new RecyclerAdapter(listImages);
         recyclerView.setAdapter(adapter);
